@@ -63,6 +63,7 @@ main {
 }
 
 #description {
+  text-align: justify;
   color: white;
   line-height: 30px;
   font-size: 1.12rem;
