@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 110%;
+  width: 100%;
+  background-image: url("./background.jpg");
+  /* background-repeat: no-repeat; */
+  background-blend-mode: luminosity;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  /* margin: 10px; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#current-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headings {
+  padding: 20px 28px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.2rem;
+}
+
+#date {
+  font-size: 1.4rem;
+}
+
+.image {
+  height: 82vh;
+  width: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-self: center;
+  margin: 16px auto;
+  border: 1px solid white;
+}
+
+.frameVideo {
+  height: 80vh;
+  width: 60%;
+  align-self: center;
+  margin: 16px auto;
+}
+
+#description {
+  color: white;
+  line-height: 30px;
+  font-size: 1.12rem;
+  padding: 20px 8px;
+  width: 72%;
+  align-self: center;
+  margin: 10px 0;
+}
+
+h3 {
+  color: white;
+  margin-top: 6%;
+  margin-left: 18px;
+  font-size: 1.4rem;
+}
+
+#search-form {
+  height: 50px;
+  width: 25%;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin: 10px 20px 80px 20px;
+}
+
+#search-form input {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 0.9rem;
+  padding: 5px 15px 5px 20px;
+  transition: 0.4s ease-out;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#search-form input:focus {
+  outline: none;
+  box-shadow: 0 0 8px white;
+}
+
+#search-form button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.4s ease-out;
+  cursor: pointer;
+}
+
+#search-form button:hover {
+  background-color: white;
+  color: black;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#search-history {
+  width: 24%;
+  list-style: none;
+  color: white;
+  padding: 8px 28px;
+  margin: 12px 0;
+}
+
+#search-history li {
+  font-size: 1.06rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+#search-history li:hover {
+  transform: translateX(10px) scale(1.05);
+}
